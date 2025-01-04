@@ -1,136 +1,234 @@
-/* Estilos Gerais */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset e Estilo Global */
+* {
     margin: 0;
     padding: 0;
-    background-color: #F7F7F7;
-    color: #333333;
+    box-sizing: border-box;
 }
 
-header {
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5; /* Fundo neutro */
+    color: #333; /* Texto escuro para boa legibilidade */
+}
+
+/* Header */
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #003366; /* Azul marinho */
-    color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    background-color: #003366; /* Azul escuro */
+    padding: 10px 20px;
 }
 
-header .logo img {
-    height: 50px;
+.navbar .logo h1 {
+    color: #FFA500; /* Laranja vibrante */
 }
 
-nav ul {
+.navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
 }
 
-nav ul li a {
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
+    font-size: 16px;
 }
 
-nav ul li a:hover {
-    color: #1E90FF; /* Azul Claro */
-}
-
-.oferta-section {
-    background-color: #003366; /* Azul marinho */
-    color: white;
-    padding: 100px 20px;
+/* Seção de Introdução */
+.intro {
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 80px 20px;
 }
 
-.oferta-section h1 {
-    font-size: 3em;
+.intro h2 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-.oferta-section p {
-    font-size: 1.3em;
+.intro p {
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
-.contagem-regressiva {
-    font-size: 1.5em;
-    color: #FFA500; /* Laranja suave */
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.cta-btn {
-    background-color: #4CAF50; /* Verde escuro */
-    color: white;
-    padding: 20px 40px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
+.cta-button {
+    padding: 12px 25px;
+    background-color: #FFA500; /* Laranja vibrante */
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
-.cta-btn:hover {
-    background-color: #388E3C; /* Verde mais escuro */
+.cta-button:hover {
+    background-color: #e98e3d; /* Laranja mais escuro ao passar o mouse */
 }
 
-.depoimentos-section {
-    background-color: white;
-    padding: 80px 20px;
+/* Seção de Produtos */
+.products {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.depoimentos-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #003366;
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-.feedbacks {
+.product-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-.feedback-card {
-    background-color: #F1F1F1;
+.product-card {
+    background-color: #fff; /* Fundo branco para destacar o produto */
     padding: 20px;
-    border-radius: 5px;
-    width: 280px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
-    color: #333333;
-}
-
-.garantia-section {
-    background-color: #1E90FF; /* Azul Claro */
-    color: white;
-    padding: 50px 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-footer {
-    background-color: #333333; /* Cor neutra escura */
-    color: white;
-    padding: 40px 20px;
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product-card .cta-button {
+    margin-top: 10px;
+}
+
+/* Seção de Depoimentos */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Fundo claro para contraste */
     text-align: center;
 }
 
-footer .selos-seguranca img {
-    width: 50px;
-    margin: 0 10px;
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-footer .links-footer a {
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Garantia */
+.guarantee {
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guarantee h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.guarantee p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #A7D08E; /* Verde claro para indicar segurança e crescimento */
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1em;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-footer .links-footer a:hover {
-    color: #4CAF50; /* Verde escuro */
+.cta-button:hover {
+    background-color: #8cbf6f; /* Verde mais escuro ao passar o mouse */
+}
+
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

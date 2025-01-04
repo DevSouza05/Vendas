@@ -1,0 +1,201 @@
+/* Resetando padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #00509E 0%, #003366 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Botão de Voltar à Home */
+.back-home {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-home-button {
+    background-color: #00509E;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: #003366;
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+}
+
+/* Introdução */
+.intro .content {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Como funciona */
+.how-it-works .content {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Benefícios */
+.benefits .content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefits li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.benefits li strong {
+    color: #00509E;
+}
+
+/* Como Ganhar Comissões */
+.commissions .content {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.commissions h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.commissions p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Call to Action (Chamada para ação) */
+.cta {
+    background: linear-gradient(90deg, #ff8c00 0%, #ff5000 100%);
+    text-align: center;
+    padding: 60px 0;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta .cta-button {
+    background-color: #ff5000;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.cta .cta-button:hover {
+    background-color: #e94e00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 16px;
+}

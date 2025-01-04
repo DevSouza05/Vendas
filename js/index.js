@@ -1,25 +1,13 @@
-// Contagem Regressiva
-const countdown = () => {
-    let targetDate = new Date().getTime() + 30 * 60 * 1000; // 30 minutos de contagem regressiva
-    let timer = document.getElementById("timer");
+// Testemunhos: Carrossel automático
+const testimonials = document.querySelector('.carousel');
+let index = 0;
 
-    const updateTimer = () => {
-        let now = new Date().getTime();
-        let distance = targetDate - now;
+function autoSlide() {
+    index++;
+    if (index >= testimonials.children.length) {
+        index = 0;
+    }
+    testimonials.scrollLeft = testimonials.children[index].offsetLeft;
+}
 
-        if (distance <= 0) {
-            clearInterval(timerInterval);
-            timer.innerHTML = "Oferta Expirada!";
-        } else {
-            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            timer.innerHTML = hours + ":" + minutes + ":" + seconds;
-        }
-    };
-
-    const timerInterval = setInterval(updateTimer, 1000);
-    updateTimer();
-};
-
-countdown();
+setInterval(autoSlide, 3000); // Alterar a cada 3 segundos

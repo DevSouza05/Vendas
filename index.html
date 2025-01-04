@@ -1,74 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desconto Exclusivo - Ofertas Incríveis!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SmartOfertas | Hotmart</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+
+    <!-- Header -->
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo da loja">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#oferta">Oferta</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#garantia">Garantia</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Ofertas Exclusivas</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner com Oferta Exclusiva e Contagem Regressiva -->
-    <section id="oferta" class="oferta-section">
-        <h1>Aproveite o Desconto Exclusivo de 20%!</h1>
-        <p>Compre agora e aproveite um desconto exclusivo! Só por tempo limitado.</p>
-        <div class="contagem-regressiva">
-            <p>Oferta válida por: <span id="timer">00:30:00</span></p>
-        </div>
-        <button class="cta-btn">Garanta o Seu Agora!</button>
-    </section>
-
-    <!-- Depoimentos de Clientes (Prova Social) -->
-    <section id="depoimentos" class="depoimentos-section">
-        <h2>O que nossos clientes estão dizendo:</h2>
-        <div class="feedbacks">
-            <div class="feedback-card">
-                <p>"Comprei através deste link e economizei muito. Produto de ótima qualidade!" - João S.</p>
-            </div>
-            <div class="feedback-card">
-                <p>"Adorei o desconto e a entrega foi super rápida. Recomendo demais!" - Maria P.</p>
-            </div>
-            <div class="feedback-card">
-                <p>"Só comprei porque vi as avaliações aqui. Tudo perfeito, super confiável!" - Carlos T.</p>
-            </div>
+    <!-- Seção de Introdução e Ofertas -->
+    <section class="intro">
+        <h2>Descontos Exclusivos Só Aqui!</h2>
+        <p>Aproveite ofertas imperdíveis ao comprar pelos nossos links.</p>
+        <div class="cta-wrapper">
+            <a href="#produtos" class="cta-button">Ver Ofertas</a>
         </div>
     </section>
 
-    <!-- Garantia e Confiança -->
-    <section id="garantia" class="garantia-section">
-        <h2>Compra 100% Segura!</h2>
-        <p>Garantia de 30 dias. Se não gostar, devolvemos seu dinheiro.</p>
-        <p>Pagamentos 100% protegidos com criptografia de ponta.</p>
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="products">
+        <h2>Ofertas Especiais</h2>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição do produto.</p>
+                <p><strong>De: R$ 150,00</strong> Por: R$ 130,00</p>
+                <a href="#" class="cta-button">Comprar Agora</a>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição do produto.</p>
+                <p><strong>De: R$ 200,00</strong> Por: R$ 180,00</p>
+                <a href="#" class="cta-button">Comprar Agora</a>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer com Links Importantes e selos de confiança -->
+    <!-- Seção de Depoimentos -->
+    <section class="testimonials">
+        <h2>O que dizem nossos clientes</h2>
+        <div class="carousel">
+            <div class="testimonial-card">
+                <p>"Ótimo serviço e descontos incríveis!" - João</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Amei o produto, entrega rápida e preço justo!" - Maria</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Comprei com confiança e adorei o atendimento!" - Pedro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia de Compra -->
+    <section class="guarantee">
+        <h2>Compre com Confiança!</h2>
+        <p>Garantia de 30 dias de reembolso, sem perguntas!</p>
+        <a href="#produtos" class="cta-button">Garantir meu Desconto</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="selos-seguranca">
-                <img src="selo-seguro.png" alt="Selo de Segurança">
-                <img src="selo-privacidade.png" alt="Selo de Privacidade">
-            </div>
-            <div class="links-footer">
-                <a href="#privacy-policy">Política de Privacidade</a>
-                <a href="#terms">Termos de Uso</a>
-            </div>
-        </div>
+        <p>&copy; 2025 Ofertas Exclusivas. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
