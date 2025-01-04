@@ -18,6 +18,7 @@ body {
     align-items: center;
     background-color: #003366; /* Azul escuro */
     padding: 10px 20px;
+    position: relative;
 }
 
 .navbar .logo h1 {
@@ -27,6 +28,7 @@ body {
 .navbar .nav-links {
     list-style: none;
     display: flex;
+    transition: all 0.3s ease;
 }
 
 .navbar .nav-links li {
@@ -37,6 +39,36 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+}
+
+/* Menu Hamburguer */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000; /* Para garantir que fique sobre o menu */
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Animação de Transformação do Hambúrguer */
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translateY(8px); /* Linha de cima vira para formar o X */
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0; /* Linha do meio desaparece */
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px); /* Linha de baixo vira para formar o X */
 }
 
 /* Seção de Introdução */
@@ -210,6 +242,24 @@ footer {
     .navbar .nav-links {
         flex-direction: column;
         margin-top: 10px;
+        display: none;
+        width: 100%;
+        background-color: #003366; /* Azul escuro para o menu */
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        transform: translateY(-100%);
+        opacity: 0; /* Inicia invisível */
+        transition: transform 0.5s ease, opacity 0.5s ease; /* Aumento no tempo de transição */
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1; /* Torna visível */
     }
 
     .product-cards {
@@ -230,5 +280,9 @@ footer {
     .testimonial-card {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }
