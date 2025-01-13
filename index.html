@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SmartOfertas | Hotmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="./about.html">Sobre</a></li>
-                <li><a href="#">Produtos</a></li>
+                <li><a href="./product.html">Produtos</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
               <!-- Menu Hamburguer -->
@@ -32,10 +33,12 @@
 
     <!-- Seção de Introdução e Ofertas -->
     <section class="intro">
-        <h2>Descontos Exclusivos Só Aqui!</h2>
-        <p>Aproveite ofertas imperdíveis ao comprar pelos nossos links.</p>
-        <div class="cta-wrapper">
-            <a href="#produtos" class="cta-button">Ver Ofertas</a>
+        <div class="intro-content">
+            <h2>Descontos Exclusivos Só Aqui!</h2>
+            <p>Aproveite ofertas imperdíveis ao comprar pelo nosso site.</p>
+            <div class="cta-wrapper">
+                <a href="./product.html" class="cta-button">Ver Ofertas</a>
+            </div>
         </div>
     </section>
 
@@ -44,43 +47,86 @@
         <h2>Ofertas Especiais</h2>
         <div class="product-cards">
             <div class="product-card">
-                <img src="product1.jpg" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p>Descrição do produto.</p>
-                <p><strong>De: R$ 150,00</strong> Por: R$ 130,00</p>
+                <img src="./src/iphone.jpg" alt="Produto 1">
+                <h3>Iphone 13</h3>
+                <p>128GB, 
+                Tela 6,1 12MP</p>
+                <p><strong>De: R$ 3.699,00</strong> Por: R$ 3.400,00</p>
                 <a href="#" class="cta-button">Comprar Agora</a>
             </div>
             <div class="product-card">
-                <img src="product2.jpg" alt="Produto 2">
+                <img src="./src/iphone 15.jpg" alt="Produto 2">
+                <h3>Iphone 15</h3>
+                <p>128GB, 
+                    Tela 6,1 12MP</p>
+                <p><strong>De: R$ 10.000,00</strong> Por: R$ 9.299,00</p>
+                <a href="#" class="cta-button">Comprar Agora</a>
+            </div>
+
+            <div class="product-card">
+                <img src="./src/iphone 15.jpg" alt="Produto 2">
                 <h3>Produto 2</h3>
-                <p>Descrição do produto.</p>
-                <p><strong>De: R$ 200,00</strong> Por: R$ 180,00</p>
+                <p>128GB, 
+                    Tela 6,1 12MP</p>
+                    <p><strong>De: R$ 10.000,00</strong> Por: R$ 9.299,00</p>
+                <a href="#" class="cta-button">Comprar Agora</a>
+            </div>
+
+            <div class="product-card">
+                <img src="./src/iphone 15.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>128GB, 
+                    Tela 6,1 12MP</p>
+                    <p><strong>De: R$ 10.000,00</strong> Por: R$ 9.299,00</p>
                 <a href="#" class="cta-button">Comprar Agora</a>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Depoimentos -->
-    <section class="testimonials">
-        <h2>O que dizem nossos clientes</h2>
-        <div class="carousel">
-            <div class="testimonial-card">
-                <p>"Ótimo serviço e descontos incríveis!" - João</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Amei o produto, entrega rápida e preço justo!" - Maria</p>
-            </div>
-            <div class="testimonial-card">
-                <p>"Comprei com confiança e adorei o atendimento!" - Pedro</p>
+  <!-- Seção de Depoimentos -->
+<section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="carousel">
+        <div class="testimonial-card">
+            <p>"Ótimo serviço e descontos incríveis!" - João</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
             </div>
         </div>
-    </section>
+        <div class="testimonial-card">
+            <p>"Amei o produto, entrega rápida e preço justo!" - Maria</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p>"Comprei com confiança e adorei o atendimento!" - Pedro</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <!-- <i class="fa fa-star-half-alt"></i> -->
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Garantia de Compra -->
     <section class="guarantee">
         <h2>Compre com Confiança!</h2>
-        <p>Garantia de 30 dias de reembolso, sem perguntas!</p>
-        <a href="#produtos" class="cta-button">Garantir meu Desconto</a>
+        <p>Garantia de 30 dias de reembolso!</p>
+        <a href="./product.html" class="cta-button">Garantir meu Desconto</a>
     </section>
 
     <!-- Footer -->
